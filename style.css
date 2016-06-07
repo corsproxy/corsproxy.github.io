@@ -38,14 +38,17 @@ a {
 #header a:hover{
 	color: white;
 }
+
 h3 a {
 	color:inherit;
 	cursor: pointer;
 	text-decoration: none;
 }
+
 h3 a:hover {
 	text-decoration: underline;
 }
+
 #content {
 	padding: 5vh 0px;
 	margin: 8px auto;
