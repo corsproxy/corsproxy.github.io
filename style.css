@@ -1,0 +1,95 @@
+html, body {
+	background: #EEE;
+	font-family: 'Roboto';
+	text-align: center;
+	margin: 0;
+}
+html {
+	min-width: 100%;
+}
+body, #header{
+	min-width: 168px;
+}
+#header {
+	position: fixed;
+	top:0;
+	left:0;
+	height:5vh;
+	margin:auto;
+	padding-bottom: 0.1vh;
+	z-index: 100000;
+	font-size: 4vh;
+	text-align: center;
+	width: 100vw;
+	background: #EF4836;
+	color: #EEEEEE;
+	/*box-shadow: 0px 10pxpx #000;*/
+}
+a {
+	color: #EF4836;
+	text-decoration: underline;
+}
+#header a {
+	text-decoration: none;
+	color: inherit;
+	line-height: 5vh;
+	transition: color .5s;
+}
+#header a:hover{
+	color: white;
+}
+h3 a {
+	color:inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+h3 a:hover {
+	text-decoration: underline;
+}
+#content {
+	padding: 5vh 0px;
+	margin: 8px auto;
+	background: white;
+	min-height: 100vh;
+	width: 60%;
+	color: #333;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+	font-size: 1em;
+}
+#text {
+	margin: auto;
+	max-width: 50vw;
+}
+.blockchain-btn{
+	font-size:16px;
+	margin:0 auto;
+	width: 300px
+}
+.blockchain.stage-loading{
+	text-align:center;
+}
+code {
+	display: inline-block;
+	font-family: 'Droid Sans Mono';
+	font-size: 0.7em;
+	background: #EFEFEF;
+	padding: 5px 10px;
+	box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+@media screen and (max-width: 600px) {
+	#content {
+		width: 100%;
+		margin: 0px;
+	}
+	#text {
+		max-width: 80vw;
+	}
+	.blockchain-btn{
+		max-width:300px;
+		width: 80vw
+	}
+    .blockchain-btn img{
+		max-width:300px;
+		width: 80vw;
+	}
+}
