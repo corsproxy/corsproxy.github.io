@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>crossorigin.me</title>
+<link rel="icon" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Roboto:300">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://blockchain.info/Resources/wallet/pay-now-button.js"></script>
+</head>
+<body>
+<h1 id="header"><a href="#">&#8646;</a></h1>
+<div id="content">
+<div id="text">
+<h2>Long live CORS proxies!</h2>
+<p>Welcome to crossorigin.me, the free CORS proxy for everyone!</p>
+<br />
+<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
+		<script>
+			CoinWidgetCom.go({
+				wallet_address: '1GSKWayDGEMWfwMwFTTz79CCtCCYQLWtWF',
+				currency: 'bitcoin',
+				counter: 'count',
+				lbl_button: 'Donate',
+				lbl_count: 'donations',
+				lbl_amount: 'BTC',
+				lbl_address: 'Use address below to donate. Thanks!',
+				qrcode: true,
+				alignment: 'bl',
+				decimals: 3,
+				size: "big",
+				color: "light",
+				countdownFrom: "0",
+				element: "#coinwidget-bitcoin-1GSKWayDGEMWfwMwFTTz79CCtCCYQLWtWF",
+				onShow: function(){},
+				onHide: function(){}
+			});
+		</script>
+		<div id="coinwidget-bitcoin-1GSKWayDGEMWfwMwFTTz79CCtCCYQLWtWF"></div>
+		<p>You can also support crossorigin.me by becoming <a href="https://patreon.com/corsproxy/">a patron</a>, or by <a href="http://donate.crossorigin.me">donating</a> via PayPal. Thanks!</p>
+		<br /
+<h3><a name="what" href="#what">Wha..? Where am I? Why is the server down?</a></h3>
+<p>Hello! You're seeing this page because I'm working on making crossorigin.me more stable and less glitchy. Please be patient, and consider donating (it helps pay for hosting and gives me incentive to work on this thing :).</p>
+</div>
+</div>
+</body>
+</html>
