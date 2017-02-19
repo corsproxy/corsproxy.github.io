@@ -1,2 +1,2 @@
-# corsproxy.github.io
-DOWNTIME IS NOT GOOD
+#corsproxy.github.io
+The website for crossorigin.me
