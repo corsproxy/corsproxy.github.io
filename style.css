@@ -1,98 +1,171 @@
-html, body {
-	background: #EEE;
-	font-family: 'Roboto';
-	text-align: center;
-	margin: 0;
-}
-html {
-	min-width: 100%;
-}
-body, #header{
-	min-width: 168px;
-}
-#header {
-	position: fixed;
-	top:0;
-	left:0;
-	height:5vh;
-	margin:auto;
-	padding-bottom: 0.1vh;
-	z-index: 100000;
-	font-size: 4vh;
-	text-align: center;
-	width: 100vw;
-	background: #EF4836;
-	color: #EEEEEE;
-	/*box-shadow: 0px 10pxpx #000;*/
-}
-a {
-	color: #EF4836;
-	text-decoration: underline;
-}
-#header a {
-	text-decoration: none;
-	color: inherit;
-	line-height: 5vh;
-	transition: color .5s;
-}
-#header a:hover{
-	color: white;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #2A2A2A;
 }
 
-h3 a {
-	color:inherit;
-	cursor: pointer;
-	text-decoration: none;
+.content {
+  background-clip: padding-box;
+  width: 100%;
+  margin-top: 80px;
+  height: 100%;
+  font-family: "Roboto";
 }
 
-h3 a:hover {
-	text-decoration: underline;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2A2A2A;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  box-shadow: 0 0px 5px 2px rgba(0,0,0,0.5);
 }
 
-#content {
-	padding: 5vh 0px;
-	margin: 8px auto;
-	background: white;
-	min-height: 100vh;
-	width: 60%;
-	color: #333;
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-	font-size: 1em;
+.header-inner {
+  margin: auto;
+  align-items: center;
+  height: inherit;
+  display: flex;
+  max-width: 80em;
 }
-#text {
-	margin: auto;
-	max-width: 50vw;
+
+.header-inner h1 {
+  font-size: 3em;
+  margin-right: auto;
+  font-family: 'Quicksand', sans-serif;
+  color: inherit;
 }
-.blockchain-btn{
-	font-size:16px;
-	margin:0 auto;
-	width: 300px
+
+.header-inner a {
+    color: inherit;
+    text-decoration: none;
 }
-.blockchain.stage-loading{
-	text-align:center;
+
+.inner {
+  padding-top: 5px;
+  box-sizing: border-box;
+  height: auto;
+  max-width: 60ch;
+  margin: auto;
 }
+
+.inner h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.content p {
+    font-size: 14pt;
+    line-height: 175%;
+}
+
+.inner p:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+.content a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.content form {
+    text-align: center;
+}
+
+
+
+code, .code {
+    padding: 3px;
+    font-family: "Space Mono", monospace;
+    line-height: 200%;
+    word-wrap: break-word;
+}
+
+/* Code element specific styling */
 code {
-	display: inline-block;
-	font-family: 'Droid Sans Mono';
-	font-size: 0.7em;
-	background: #EFEFEF;
-	padding: 5px 10px;
-	box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    display: block;
+    text-align: center;
 }
+
+/* Color Palette */
+.green {
+    color: black;
+    background-color: #0f9;
+}
+
+.purple {
+    color: white;
+    background-color: #8e44ad;
+}
+
+.blue {
+    color: black;
+    background-color: #10D2E5;
+}
+
+.black {
+    color: white;
+    background-color: #2A2A2A;
+}
+
+.grey {
+    color: white;
+    background-color: #34495e;
+}
+
+.gray {
+    color: white;
+    background-color: #453E4A;
+}
+
+/* Code highlights */
+.green code, .green .code, .purple code, .purple .code, .blue code, .blue .code {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.black code, .black .code, .grey code, .grey .code, .gray code, .gray .code {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* 'flat' styling */
+.header.flat {
+    box-shadow: none;
+    position: relative;
+}
+
+.content.flat {
+    margin-top: 0;
+}
+
+/* mobile design */
 @media screen and (max-width: 600px) {
-	#content {
-		width: 100%;
-		margin: 0px;
-	}
-	#text {
-		max-width: 80vw;
-	}
-	.blockchain-btn{
-		max-width:300px;
-		width: 80vw
-	}
-    .blockchain-btn img{
-		max-width:300px;
-		width: 80vw;
-	}
+    .header-inner h1 {
+        margin-left: auto;
+    }
+
+    .header-inner a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inner {
+        height: auto;
+        max-width: 80%;
+    }
+
+    .inner h1 {
+        margin-bottom: 0;
+        font-size: 2.5em;
+    }
+
+    .inner p:last-of-type {
+        padding-bottom: 15px;
+    }
+
 }

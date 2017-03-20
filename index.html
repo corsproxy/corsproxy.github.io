@@ -1,102 +1,115 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
-<head>
-<title>crossorigin.me</title>
-<link rel="icon" href="favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#EF4836">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Roboto:300">
-<link rel="stylesheet" href="style.css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://blockchain.info/Resources/wallet/pay-now-button.js"></script>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-<body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42726363-5', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<h1 id="header"><a href="#">&#8646;</a></h1>
-<div id="content">
-<div id="text">
-<h2>Long live CORS proxies!</h2>
-<p>Welcome to crossorigin.me, the free CORS proxy for everyone!</p>
-<br />
-<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
-		<script>
-			CoinWidgetCom.go({
-				wallet_address: '1GSKWayDGEMWfwMwFTTz79CCtCCYQLWtWF',
-				currency: 'bitcoin',
-				counter: 'count',
-				lbl_button: 'Donate',
-				lbl_count: 'donations',
-				lbl_amount: 'BTC',
-				lbl_address: 'Use address below to donate. Thanks!',
-				qrcode: true,
-				alignment: 'bl',
-				decimals: 3,
-				size: "big",
-				color: "light",
-				countdownFrom: "0",
-				element: "#coinwidget-bitcoin-1GSKWayDGEMWfwMwFTTz79CCtCCYQLWtWF",
-				onShow: function(){},
-				onHide: function(){}
-			});
-		</script>
-		<div id="coinwidget-bitcoin-1GSKWayDGEMWfwMwFTTz79CCtCCYQLWtWF"></div>
-		<p>You can also support crossorigin.me by becoming <a href="https://patreon.com/corsproxy/">a patron</a>, or by <a href="http://donate.crossorigin.me">donating</a> via PayPal. Thanks!</p>
-		<p><i>Special thanks to <a href="https://github.com/bertfreudenberg/">Bert
-        Freudenberg</a>, <a href="https://revouchers.co.uk">REVOUCHERS</a>, and
-      <a href="http://meta4vr.net/">Meta4VR.net</a> for supporting crossorigin.me on Patreon!</i></p>
-		<br />
-<!--<h4 class="aaaah">Currently experiencing downtime</h4>-->
-<h3><a name="what" href="#what">What's a "CORS proxy"?</a></h3>
-<p>A <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> proxy is a service that allows developers (probably you) to access resources from other websites, without having to own that website. </p>
-<br />
-<h3><a name="how" href="#how">How do I use it?</a></h3>
-<p>It's really easy. When you need to access a resource from a website that isn't CORS-enabled, append 'http://crossorigin.me' to the beginning of that URL. For example, if you wanted to grab the Google homepage, your code would request</p>
-<code>
-https://crossorigin.me/https://google.com
-</code>
-<p>Remember to keep the 'http://' or 'https://' after 'crossorigin.me/'.
-<br />
-<h3><a name="who" href="#who">Who set this up?</a></h3>
-<p><a href="http://technoboy10.tk">I</a> <a href="https://github.com/technoboy10">did</a>! I'm <a href="https://twitter.com/technoboyIO">technoboy10</a>, an all-around geek who likes coding. I would also appreciate it if you donated some BTC by clicking the donation button at the top of the page - domains aren't free (and neither is college)! </p>
-<br />
-<h3><a name="security" href="#security">AAAAH SO INSECURE!!!</a></h3>
-<p>...not really. By default, CORS requests do <b>not</b> send or set cookies, and neither does crossorigin.me. I take security very seriously, and I'll do my best to plug any serious security holes. Oh, and crossorigin.me is <a href="http://github.com/technoboy10/crossorigin.me">open source</a>, so please feel free to fix any security issues you find. :) </p>
-<br />
-<h3><a name="verbs" href="#verbs">This only supports GET requests!</a></h3>
-<p>Yup. Only allowing GET requests makes my code more simple, and POST requests make me nervous (uploading data to somebody else's servers seems like a security hole to me).</p>
-<p>Disagree? <a href="https://github.com/technoboy10/crossorigin.me/issues/new">File an issue</a> and let's talk.</p>
-<br />
-<h3><a name="help" href="#help">I need help / the server is down / I have a philosophical quandary related to this proxy</a></h3>
-<p>You can send a tweet to <a href="http://twitter.com/corsproxy">@corsproxy</a> and I'll do my best to help you.</p>
-<br />
-<h3><a name="legal" href="#legal">Disclaimer</a></h3>
-<p>
-	crossorigin.me (and by extension, technoboy10) is not responsible for any illegal activities that use this service. But please, don't do illegal stuff with crossorigin.me if you want it to keep running.
-</p>
-<br />
-<h3><a name="ads" href="#ads">Ads</a></h3>
-<p>
-	Because servers cost money.
-</p>
-<!-- Footer ads -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-4408306030836377"
-     data-ad-slot="3897299642"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-</div>
-</body>
+  <head>
+    <title>crossorigin.me</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Quicksand:400,500|Space+Mono&amp;subset=latin-ext" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header black">
+      <div class="header-inner">
+        <h1>crossorigin.me</h1>
+      </div>
+    </div>
+    <div class="content">
+        <section class="purple">
+            <div class="inner">
+              <h1>What's up?</h1>
+              <p>
+                  Welcome to crossorigin.me, the free CORS proxy for everyone!
+              </p>
+              <p>
+                  A CORS proxy is a service that allows developers (probably you) to access resources from other websites, without having to own that website.
+              </p>
+              <p>
+                  Most of what you need to know is on this page, but you can find links to more detailed information in each section.
+              </p>
+            </div>
+        </section>
+        <section class="grey" id="how">
+            <div class="inner">
+              <h1>How do I use it?</h1>
+              <p>
+                  When you need to access a resource from a website that isn't CORS-enabled, add 'http://crossorigin.me' to the beginning of that URL.
+              </p>
+              <p>
+                  For example, if you wanted to grab the Google homepage, your code would request
+                  <code>
+                  https://crossorigin.me/https://google.com
+                  </code>
+              </p>
+              <p>
+                  There are a few limitations on how you can use it, so be sure to read the below section carefully.
+              </p>
+            </div>
+        </section>
+        <section class="green" id="fyi">
+            <div class="inner">
+              <h1>A few caveats</h1>
+              <p>
+                  There is a 2MB size limit on files passed through the proxy, due to bandwidth concerns.
+                  If you attempt to access a larger file, you will get a 413 error and the proxy will simply stop sending data.
+              </p>
+              <p>
+                  The <a href="https://www.w3.org/TR/cors/">CORS specification</a>
+                  requires all CORS requests to include an <span class="code">Origin</span> header in every request,
+                  so crossorigin.me will respond to requests that do not include it with
+                  <code>
+                      Origin: header is required
+                  </code>
+                  Most HTTP request libraries add this header for you, but this means that you cannot test crossorigin.me
+                  by using your browser.
+              </p>
+              <p>
+                  Currently, crossorigin.me only supports <span class="code">GET</span> requests.
+                  Supporting <span class="code">PUT</span> and <span class="code">POST</span>
+                  requests is planned, but I'm trying to get the proxy running consistently first.
+              </p>
+          </div>
+        </section>
+        <section class="gray" id="thanks">
+            <div class="inner">
+              <h1>Special thanks</h1>
+              <p>
+                  I am immensely grateful to <a href="https://github.com/bertfreudenberg/">Bert
+                  Freudenberg</a>, <a href="https://revouchers.co.uk">REVOUCHERS</a>,
+                  <a href="http://meta4vr.net/">Meta4VR.net</a>, and my other patrons for their support on Patreon.
+              </p>
+              <p>
+                You can  support crossorigin.me by becoming <a href="https://patreon.com/corsproxy/">a patron</a>,
+                or by <a href="donate.html">donating</a> via PayPal. Thanks!
+              </p>
+            </div>
+        </section>
+        <section class="blue">
+            <div class="inner">
+              <h1>Who set this up?</h1>
+              <p>
+                  <a href="https://01.keybase.pub">I</a> <a href="https://github.com/technoboy10">did</a>!
+                  <br />
+                  I'm <a href="https://twitter.com/technoboyIO">connor</a>, a computer science student who likes doing open source things.
+              </p>
+              <p>
+                  I would <i>really</i> appreciate it if you felt like <a href="donate.html">buying me a coffee</a>.
+                  I spend a lot of free time maintaining the proxy, and I could use some extra caffeine so I can get homework done too. :)
+              </p>
+            </div>
+        </section>
+        <section class="black" id="info">
+            <div class="inner">
+                <p>
+                    If you need help using the proxy, tweet at <a href="https://twitter.com/corsproxy">@corsproxy</a>
+                    or send me an email at <code>connor (at) crossorigin (dot) me</code> and I'll do my best to assist you.
+                    <br  />
+                    <br  />
+                    Please be nice, I do all of this in my free time and being rude doesn't make me want to help you more.
+                </p>
+                <p>
+                    If you would like to contribute to crossorigin.me or view the source code, it is available on <a href="https://github.com/technoboy10/crossorigin.me">GitHub</a>.
+                </p>
+            </div>
+        </section>
+    </div>
+  </body>
 </html>
