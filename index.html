@@ -50,6 +50,11 @@
             <div class="inner">
               <h1>A few caveats</h1>
               <p>
+                  <strong>PLEASE DO NOT USE THE PROXY ON A PRODUCTION SITE</strong>.
+                  <br />
+                  I cannot guarantee the stability of the service, and you will <em>probably</em> experience service interruptions.
+              </p>
+              <p>
                   There is a 2MB size limit on files passed through the proxy, due to bandwidth concerns.
                   If you attempt to access a larger file, you will get a 413 error and the proxy will simply stop sending data.
               </p>
@@ -67,6 +72,10 @@
                   Currently, crossorigin.me only supports <span class="code">GET</span> requests.
                   Supporting <span class="code">PUT</span> and <span class="code">POST</span>
                   requests is planned, but I'm trying to get the proxy running consistently first.
+              </p>
+              <p>
+                  And, as always, don't send sensitive information through the proxy.
+                  This is a good rule of thumb for <em>any</em> third party service.
               </p>
           </div>
         </section>
