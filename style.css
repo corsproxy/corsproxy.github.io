@@ -36,7 +36,7 @@ body {
 
 .header-inner h1 {
   font-size: 3em;
-  margin-right: auto;
+  margin: auto;
   font-family: 'Quicksand', sans-serif;
   color: inherit;
 }
