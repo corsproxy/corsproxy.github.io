@@ -44,6 +44,7 @@ body {
 .header-inner a {
     color: inherit;
     text-decoration: none;
+    margin: auto;
 }
 
 .inner {
